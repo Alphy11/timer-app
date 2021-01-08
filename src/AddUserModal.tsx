@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { confirmAction } from './confirmAction';
-import { usersRef, useUsers } from './firebase';
+import { useUsers } from './firebase';
 
 export function AddUserModal({ closeModal }: { closeModal: () => void }) {
     const [userName, setUserName] = useState<string>('');
