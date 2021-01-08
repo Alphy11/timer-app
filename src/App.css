@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    font-size: 1.05em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+    border: 1px solid black;
+    display: flex;
+}
+.loader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.userName {
+    flex: 1;
+    margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.timer {
+    text-emphasis: bold;
+    margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.actionButton {
+    margin: 15px;
+    padding: 5px;
+    width: 4em;
+}
+.startButton {
+    background-color: green;
+}
+
+.stopButton {
+    background-color: red;
+}
+
+.resetButton {
+}
+
+.addUserButton {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.addUserModal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+}
+.closeButton {
+    padding: 10px;
+}
+
+.flexBox {
+    display: flex;
+}
+
+.flexItem {
+    flex: 1;
+}
+
+.manageModalRow {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.addUserModal {
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsMenu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.newUserInput {
+    width: 100%;
+    margin: 10px 0;
 }
